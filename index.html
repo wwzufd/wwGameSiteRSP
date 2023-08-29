@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+    <title>R-P-S</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <div id="choice-block">
+                <h1 class="title">Choose 
+                    <span id="rock">rock</span>, 
+                    <span id="paper">paper</span>, 
+                    <span id="scissors">scissors</span>?</h1>
+                <div class="cont-row">
+                    <button class="img-button" id="rock-button" onclick="userChoice(this)">
+                        <img src="img/rock.svg" alt="Rock" id="img-block1">
+                    </button>
+                    <button class="img-button" id="paper-button" onclick="userChoice(this)">
+                        <img src="img/paper.svg" alt="Paper" id="img-block2">
+                    </button>
+                    <button class="img-button" id="scissors-button" onclick="userChoice(this)">
+                        <img src="img/scissors.svg" alt="Scissors" id="img-block3">
+                    </button>
+                </div>
+            </div>
+            <div id="random-choice-block">
+                <h1 class="title" id="total-versus">Who will win?</h1>
+                <div class="cont-row">
+                    <div id="user-choice">
+                        
+                    </div>
+                    <div class="nav-cont">
+                        <img src="img/vs.svg" alt="versus" class="versus-img">
+                        <button id="again-button" onclick="restartGame()">Play again!</button>
+                    </div>
+                    <div id="program-choice">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
